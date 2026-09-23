@@ -1,0 +1,17 @@
+<html>
+  <head></head>
+  <body>
+    <h1><%= title%></h1>
+    <div>
+      <div><a href="/new">Link to view</a></div>
+    </div>
+    <% messages.forEach((message) => {%>
+        <ul>
+            <li>user: <%=message.user%></li>
+            <li>text: <%= message.text%></li>
+            <li>added: <%= message.added%></li>
+            <li><a href='/details/<%= message.user%>'>details</a></li>
+        </ul>
+    <%})%>
+  </body>
+</html>
