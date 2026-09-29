@@ -3,14 +3,14 @@
   <body>
     <h1><%= title%></h1>
     <div>
-      <div><a href="/new">Link to view</a></div>
+      <div><a href="/new">Link to new</a></div>
     </div>
     <% messages.forEach((message) => {%>
         <ul>
-            <li>user: <%=message.user%></li>
+            <li>user: <%=message.username%></li>
             <li>text: <%= message.text%></li>
             <li>added: <%= message.added%></li>
-            <li><a href='/details/<%= message.user%>'>details</a></li>
+            <li><a href='/details/<%= message.username%>'>details</a></li>
         </ul>
     <%})%>
   </body>
